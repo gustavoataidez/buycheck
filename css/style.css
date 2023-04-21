@@ -19,12 +19,15 @@ main {
     padding-top: 100px;
 }
 h1 {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: 900;
     padding-bottom: 30px;
 }
+.hide {
+    display: none;
+}
 .fa-cart-shopping {
-    font-size: 45px;
+    font-size: 50px;
 }
 #todo-form {
     display: flex;
@@ -39,8 +42,8 @@ h1 {
     width: 250px;
     border: none;
     background-color: #1C1C1C;
-    font-size: 0.8rem;
-    min-height: 35px;
+    font-size: 0.9rem;
+    height: 2.5rem;
     padding-left: 12px;
     padding-right: 10px;
     outline: none;
@@ -56,10 +59,16 @@ h1 {
     font-size: 1.2rem;
     border: none;
     background-color: #00D655;
-    width: 35px;
-    height: 35px;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgb(180, 180, 180);
+}
+.button-todo:hover {
+    cursor:pointer;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: 0.3s;
+    transform: translatey(-2px);
 }
 #button-cancel {
     font-size: 0.9rem;
@@ -68,37 +77,41 @@ h1 {
     background-color: #00D655;
     border-radius: 25px;
     padding: 5px 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 80px;
 }
 #edit-form {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    gap: 10px;
+    text-align: center;
     background-color: #1C1C1C;
     padding: 15px 0px;
     border-radius: 30px;
     width: 320px;
-    padding: auto;
     box-shadow: 5px 5px 10px rgb(180, 180, 180);
 }
 #edit-form h3 {
     font-size: 0.9rem;
     font-weight: 600;
     color: #EEEEEE;
+    padding-bottom: 10px;
 }
-#edit-form button {
+#button-edit {
+    margin: 0;
     box-shadow: none;
+}
+.edit-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 #input-edit {
     color: black;
     font-weight: 600;
-    margin-right: 2px;
     background-color: #D9D9D9;
     box-shadow: none;
     font-size: 0.8rem;
+    height: 2.2rem;
 }
 #input-edit::placeholder{
     color: #1C1C1C;
@@ -110,9 +123,10 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 #search-input {
+    height: 2.2rem;
     border: none;
     background-color: #D9D9D9;
     color: #1C1C1C;
@@ -124,13 +138,12 @@ h1 {
     background-color: #D9D9D9;
 }
 .custom-select {
-    width: 296px;
+    width: 290px;
     border: none;
     background-color: #D9D9D9;
-    font-size: 0.8rem;
-    min-height: 35px;
+    font-size: 0.9rem;
+    height: 2.2rem;
     padding-left: 12px;
-    padding-right: 10px;
     outline: none;
     color: #242424;
     border-radius: 25px;
@@ -140,16 +153,19 @@ h1 {
     color: #1C1C1C;
 }
 #todo-list {
-    margin-top: 30px;
+    margin-top: 35px;
     background-color: #D9D9D9;
-    width: 350px;
-    padding: 25px 10px;
+    width: 340px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
     border-radius: 30px;
+}
+#todo-list:empty {
+    display: none;
 }
 .todo {
     display: flex;
@@ -166,19 +182,23 @@ h1 {
 }
 .todo-buttons {
     display: flex;
-    gap: 20px;
-    margin-right: 5px;
+    gap: 5px;
+    margin-right: 2px;
 }
 .todo-buttons button {
     font-size: 1rem;
     border: none;
+    width: 1.6rem;
+    height: 1.6rem;
     background-color: transparent;
+    border-radius: 1rem;
 }
 .todo-buttons button:hover {
     cursor:pointer;
-    color: #00D655;
+    background-color: rgb(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
-.selected {
+.done {
     text-decoration: line-through 2px;
     background-color: #00D655;
 }
