@@ -1,9 +1,9 @@
 # app-buycheck
 
 <div style="display: inline_block"><br>
-  <img align="center" alt="mobile" width="80" src="assets/mobile (7).png">
-  <img align="center" alt="mobile" width="80" src="assets/mobile (8).png">
-  <img align="center" alt="mobile" width="80" src="assets/mobile (9).png">
+  <img align="center" alt="mobile" width="160" src="assets/mobile (7).png">
+  <img align="center" alt="mobile" width="160" src="assets/mobile (8).png">
+  <img align="center" alt="mobile" width="160" src="assets/mobile (9).png">
 </div>
 
 ## About
