@@ -52,7 +52,7 @@ const saveToDo = (text, done = 0, save = 1) => {
     todoList.appendChild(todo);
 
     todoInput.value = '';
-    
+
     todoInput.focus();
 }
 
@@ -71,7 +71,7 @@ const updateTodo = (text) => {
 
         if(todoTitle.innerText === oldInputValue){
             todoTitle.innerText = text;
-            
+
             // Utilizando dados da localStorage
             updateTodoLocalStorage(oldInputValue, text);
         }
@@ -128,7 +128,7 @@ switch (filterValue) {
     break;
 }
   };
-  
+
 
 // EVENTOS
 todoForm.addEventListener("submit", (e) => {
@@ -191,24 +191,24 @@ editForm.addEventListener('submit', (e) => {
 
 searchInput.addEventListener("keyup", (e) => {
     const search = e.target.value;
-  
+
     getSearchedTodos(search);
   });
-  
+
   eraseBtn.addEventListener("click", (e) => {
     e.preventDefault();
-  
+
     searchInput.value = "";
-  
+
     searchInput.dispatchEvent(new Event("keyup"));
   });
-  
+
   filterBtn.addEventListener("change", (e) => {
     const filterValue = e.target.value;
-  
+
     filterTodos(filterValue);
   });
-  
+
   // Local Storage
 const getTodosLocalStorage = () => {
 const todos = JSON.parse(localStorage.getItem("todos")) || [];
