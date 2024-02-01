@@ -74,7 +74,7 @@ h1 {
     font-size: 0.9rem;
     font-weight: 600;
     border: none;
-    background-color: #00D655;
+    background-color: #B5B5B5;
     border-radius: 25px;
     padding: 5px 10px;
     margin-top: 10px;
@@ -97,6 +97,7 @@ h1 {
 #button-edit {
     margin: 0;
     box-shadow: none;
+    background-color: #B5B5B5;
 }
 .edit-part {
     display: flex;
