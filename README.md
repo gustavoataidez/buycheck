@@ -1,4 +1,4 @@
-# app-buycheck
+# Buycheck
 
 <div style="display: inline_block"><br>
   <img align="center" alt="mobile" width="160" src="assets/mobile (7).png">
