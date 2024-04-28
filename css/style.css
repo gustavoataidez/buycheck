@@ -5,12 +5,12 @@
     text-decoration: none;
 }
 body {
-    background-color: #EEEEEE;
+    background-color: #e7e7e7;
     font-family: 'Roboto', sans-serif;
 }
 main {
     margin: auto;
-    background-color: #EEEEEE;
+    background-color: #e7e7e7;
     height: 100vh;
     max-width: 500px;
     display: flex;
@@ -149,6 +149,9 @@ h1 {
     color: #242424;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgb(190, 190, 190);
+}
+.custom-select:hover {
+    cursor: pointer;
 }
 .custom-select option {
     color: #1C1C1C;
