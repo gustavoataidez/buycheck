@@ -12,7 +12,7 @@ main {
     margin: auto;
     background-color: #e7e7e7;
     height: 100vh;
-    max-width: 500px;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ h1 {
     width: 250px;
     border: none;
     background-color: #1C1C1C;
-    font-size: 0.9rem;
+    font-size: 1rem;
     height: 2.5rem;
     padding-left: 12px;
     padding-right: 10px;
@@ -71,7 +71,7 @@ h1 {
     transform: translatey(-2px);
 }
 #button-cancel {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     border: none;
     background-color: #B5B5B5;
@@ -89,7 +89,7 @@ h1 {
     box-shadow: 5px 5px 10px rgb(180, 180, 180);
 }
 #edit-form h3 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #EEEEEE;
     padding-bottom: 10px;
@@ -111,7 +111,7 @@ h1 {
     font-weight: 600;
     background-color: #D9D9D9;
     box-shadow: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     height: 2.2rem;
 }
 #input-edit::placeholder{
@@ -142,7 +142,7 @@ h1 {
     width: 290px;
     border: none;
     background-color: #D9D9D9;
-    font-size: 0.9rem;
+    font-size: 1rem;
     height: 2.2rem;
     padding-left: 12px;
     outline: none;
@@ -180,7 +180,7 @@ h1 {
     padding: 10px;
     width: 300px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1rem;
     box-shadow: 5px 5px 10px rgb(190, 190, 190);
 }
@@ -205,4 +205,31 @@ h1 {
 .done {
     text-decoration: line-through 2px;
     background-color: #00D655;
+}
+
+@media (min-width: 550px) {
+body{
+    background: 
+    linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)),
+    url("../assets/supermarket.jpg");
+    background-size: cover;
+    background-position: center;
+}
+main {
+    margin: 1rem auto;
+    background-color: #e7e7e7;
+    height: 96vh;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    border-radius: 2rem;
+    box-shadow: 00px 0px 20px rgb(0, 0, 0,0.4);
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
 }
